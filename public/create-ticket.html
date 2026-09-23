@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Create Ticket</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Create Ticket</h1>
+  <form id="ticketForm">
+    <label>Title</label>
+    <input type="text" id="title" required>
+    <label>Description</label>
+    <textarea id="description" rows="4"></textarea>
+    <label>Category</label>
+    <select id="category">
+      <option>Bug Report</option>
+      <option>Feature Request</option>
+      <option>Technical Support</option>
+      <option>Account Issue</option>
+      <option>Hardware Issue</option>
+      <option>Software Installation</option>
+      <option>Network Issue</option>
+      <option>General Inquiry</option>
+    </select>
+    <label>Priority</label>
+    <select id="priority">
+      <option>Low</option>
+      <option selected>Medium</option>
+      <option>High</option>
+      <option>Critical</option>
+    </select>
+    <button type="submit">Submit Ticket</button>
+    <div class="error" id="errorMsg"></div>
+  </form>
+</div>
+<script src="js/create-ticket.js"></script>
+</body>
+</html>

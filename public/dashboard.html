@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container wide">
+  <div class="topbar">
+    <h1>My Tickets</h1>
+    <div>
+      <a href="create-ticket.html">New Ticket</a>
+      &nbsp;|&nbsp;
+      <a href="create-user.html" id="createUserLink" style="display:none;">Create User</a>
+      &nbsp;|&nbsp;
+      <a href="#" id="logoutLink">Log Out</a>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr><th>ID</th><th>Title</th><th>Category</th><th>Priority</th><th>Status</th><th id="assignHeader" style="display:none;">Assign</th><th id="statusHeader" style="display:none;">Update Status</th>
+    </thead>
+    <tbody id="ticketBody"></tbody>
+  </table>
+</div>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
